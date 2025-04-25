@@ -1,0 +1,38 @@
+{
+    "name": "jiannius/permission",
+    "description": "Jiannius Role & Permission",
+    "type": "library",
+    "require": {
+        "doctrine/dbal": "^3.6",
+        "laravel/pail": "^1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jiannius\\Permission\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "TJ",
+            "email": "tj@jiannius.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jiannius\\Permission\\PermissionServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": false,
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
