@@ -19,6 +19,7 @@ class PermissionServiceProvider extends ServiceProvider
     public function boot() : void
     {
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
         Gate::define('role', [Policy::class, 'role']);
         Gate::define('perm', [Policy::class, 'permission']);
